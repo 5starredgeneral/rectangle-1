@@ -1,0 +1,38 @@
+public class Rectangle {
+
+
+
+    //private members
+    private double width;
+
+    private double height;
+
+    //constructors
+     public Rectangle(){width = 1; height = 1;}
+
+    public Rectangle (double h, double w) {this.width = w; this.height = h;}
+
+    //methods
+    public double getArea() {return width*height;}
+    public double getPerimeter() {return 2*(width + height);}
+
+}
+
+
+
+
+
+
+
+public class TestRectangle {
+
+    public static void main (String[] args){
+        Rectangle rectangle1 = new Rectangle();
+        System.out.println("The area of rectangle 1 is " + rectangle1.getArea());
+        System.out.println("The perimeter of rectangle 1 is " + rectangle1.getPerimeter());
+
+
+
+        Rectangle rectangle2 = new Rectangle(,3);
+        System.out.println("The area of rectangle 2 is " + rectangle2.getArea());
+        System.out.println("The perimeter of rectangle 2 is " + rectangle2.getPerimeter());
